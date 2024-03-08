@@ -1,0 +1,7 @@
+<h1>Catalogo</h1>
+{{msg}}
+<form action="/catalogo/" method="POST">
+    {% csrf_token %}
+    {{form}}
+<button>Crear catalogo</button>
+</form>

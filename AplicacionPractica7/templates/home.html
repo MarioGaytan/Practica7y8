@@ -1,0 +1,16 @@
+<h1>Pagina principal home</h1>
+{% if user.is_authenticated %}
+<li>
+    <a href="/salir">Cerrar sesion</a>
+</li>
+<li>
+    <a href="/catalogo">catalogo</a>
+</li>
+{% else %}
+<li>
+    <a href="/registro">Registrarse</a>
+</li>
+<li>
+    <a href="/login">Iniciar Sesion</a>
+</li>
+{% endif %}
