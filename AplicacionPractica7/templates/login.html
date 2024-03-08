@@ -1,6 +1,6 @@
 <h1>Iniciar sesion</h1>
 {{msg}}
-<form action="/login/" method="POST">
+<form  method="POST" action="/login/">
     {% csrf_token %}
     {{form}}
 <button>Iniciar sesion</button>
